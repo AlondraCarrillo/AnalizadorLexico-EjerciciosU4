@@ -8,8 +8,8 @@ reservadas = ['MODULE','SUB','END','MOD','IMPORTS','PROGRAM','MAIN','ARGS','AS',
 'CONSOLE','WRITELINE','VBCRLF','DIM','READLINE','DATETIME','NOW','READKEY','TRUE','FALSE','BOOLEAN','SYSTEM'
 		]
 
-tokens = reservadas+['ID','NUMERO','SUMA','RESTA','DIVISION','MULTIPLICACION','MENORQ','MENORIGUAL','MAYORIGUAL' ,'MAYORQ','IGUAL','NOIGUAL',
-'PIZQ','PDER','LLIZQ','LLDER','PUNTO','UPDATE', 'COMMA' , 'PUNTOCOMMA'
+tokens = reservadas+['ID','NUMERO','SUMA','RESTA','DIV','MULTI','MENORQ','MAYORQ','MAYORIGUAL','MENORIGUAL','COMMA','PUNTOCOMMA','IGUAL','NOIGUAL',
+'PIZQ','PDER','LLIZQ','LLDER','PUNTO','UPDATE'
 		]
 
 t_ignore = '\t '
@@ -20,17 +20,17 @@ t_DIV = r'/'
 t_IGUAL = r'='
 t_MENORQ = r'<'
 t_MAYORQ = r'>'
-t_MENORIGUAL = r'<='
 t_MAYORIGUAL = r'>='
+t_MENORIGUAL = r'<='
 t_PIZQ = r'\('
 t_PDER = r'\)'
 t_PUNTO = r'\.'
 t_NOIGUAL = '~='
 t_LLIZQ = r'\{'
 t_LLDER = r'\}'
-t_UPDATE = r':='
 t_COMMA = r','
 t_PUNTOCOMMA = r';'
+t_UPDATE = r':='
 
 def t_ID(t):
 	r'[a-zA-Z_][a-zA-Z0-9_]*'
