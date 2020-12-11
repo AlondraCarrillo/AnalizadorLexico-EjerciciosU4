@@ -57,7 +57,7 @@ def t_error(t):
 	t.lexer.skip(1)
 
 
-fp = codecs.open("C:/Users/bodega/Desktop/LENGUAJES Y AUTOMATAS LEONEL/UNIDAD4/Analizador-Lexico-Ejercicios/Analizador-Lexico-Ejercicios/Pruebas/Prueba1.vb", "r", "utf-8")
+fp = codecs.open("C:/Users/bodega/Desktop/LENGUAJES Y AUTOMATAS LEONEL/UNIDAD4/AnalizadorLexico-EjerciciosU4/AnalizadorLexico-EjerciciosU4\Pruebas.vb", "r", "utf-8")
 cadena = fp.read()
 fp.close()
 
